@@ -1,10 +1,7 @@
 module.exports = async (client, msg) => {
 
-    // Ignore all bots
-    if (msg.author.bot) return;
-
-    // Ignore direct messages from others except owner
-    if (msg.channel.type === "dm" && msg.author.id != client.config.owner) return;
+    // Ignore all bots and users except the owner
+    if (msg.author.bot || msg.author.id != client.config.owner) return;
 
     // Ignore messages without prefix
     if (msg.content.indexOf(client.config.prefix) !== 0) return;
