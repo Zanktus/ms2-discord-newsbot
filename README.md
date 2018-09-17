@@ -20,6 +20,6 @@ To actually start and use the crawling, the configurated owner has to use one of
 
 * `!news update` Manually crawl the news page and post if new entries were found
 * `!news auto` Auto crawls the news page hourly and post once a new entry is found
-* `!news auto <number>` Same as the one above, but you can define the interval in which it should check for news (default: 1)
+* `!news auto <number>` Same as above, but you can define the interval in which it should check for news (default: 1)
 
 *Do not try to run this yet, it's not done!*
