@@ -6,7 +6,7 @@ This bot is written to run with [node.js](https://nodejs.org/en/download/).
 
 After it's installed, use `npm install` in the bot project to install all dependencies.
 
-You have to add your own discord user-id and a bot token to the `settings.json`, you can read more on how to generate a token [here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token).
+You have to add your own discord user-id (enable developer mode in discord, right click your profile and select "Copy ID") and a bot token to the `settings.json`, you can read more on how to generate a token [here](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token).
 
 *Never share your token with other people*
 
