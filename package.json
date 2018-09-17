@@ -1,1 +1,27 @@
-{}
+{
+  "name": "ms2-discord-newsbot",
+  "description": "This Discord bot scrapes the MapleStory 2 news page and posts new entries to a channel.",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zanktus/ms2-discord-newsbot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "maplestory"
+  ],
+  "author": "Zanktus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zanktus/ms2-discord-newsbot/issues"
+  },
+  "homepage": "https://github.com/Zanktus/ms2-discord-newsbot#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.2.0",
+    "simplecrawler": "^1.1.6"
+  }
+}
