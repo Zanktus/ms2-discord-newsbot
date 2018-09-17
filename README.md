@@ -16,8 +16,7 @@ You can start the bot with `node bot.js` command or using the `start.sh` (linux)
 ### Features
 In the `settings.json` you can define which channel the news should be posted to, the default is "news".
 
-To actually start and use the crawling, the configurated owner has to direct message the bot with one of the following commands.
-I prohibited the use of commands in channels to avoid abusing it, if you want others to use the commands, you might should add conditions and roles manually.
+To actually start and use the crawling, the configurated owner has to use one of the following commands (either direct message or in a channel). I prohibited the use of commands to others to avoid abusing it, if you want others to use the commands, you might should add specific conditions and roles manually.
 
 * `!news update` Manually crawl the news page and post if new entries were found
 * `!news auto` Auto crawls the news page hourly and post once a new entry is found
