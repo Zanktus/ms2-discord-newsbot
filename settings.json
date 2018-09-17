@@ -2,5 +2,6 @@
   "token": "INSERT_YOUR_BOT_TOKEN_HERE",
   "prefix": "!",
   "owner": "INSERT_YOUR_DISCORD_USER_ID_HERE",
-  "channelName": "news"
+  "channelName": "news",
+  "autoStartCrawl": false
 }
