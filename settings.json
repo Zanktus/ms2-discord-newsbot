@@ -1,5 +1,6 @@
 {
-  "token": "INSERT YOUR BOT TOKEN HERE",
+  "token": "INSERT_YOUR_BOT_TOKEN_HERE",
   "prefix": "!",
-  "owner": "INSERT YOUR DISCORD USER ID HERE"
+  "owner": "INSERT_YOUR_DISCORD_USER_ID_HERE",
+  "channelName": "news"
 }
