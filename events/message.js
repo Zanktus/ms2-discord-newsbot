@@ -9,12 +9,12 @@ module.exports = async (client, msg) => {
     // Ignore messages without prefix
     if (msg.content.indexOf(client.config.prefix) !== 0) return;
 
-    // Argument and command name definition
+    // Argument and command name declarations
     const args = msg.content.slice(client.config.prefix.length).trim().split(/ +/g),
           command = args.shift().toLowerCase();
 
-    // Grab the command data from the Enmap
-    const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));;
+    // Get the command from the created Enmap
+    const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));
 
     if (!cmd) return; 
 
