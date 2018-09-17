@@ -22,4 +22,7 @@ To actually start and use the crawling, the configurated owner has to use one of
 * `!news auto` Auto crawls the news page hourly and post once a new entry is found
 * `!news auto <number>` Same as above, but you can define the interval in which it should check for news (default: 1)
 
+When you run the crawler for the first time it will post the latest 9 news to the news channel because the initial `news.json` is empty. If you don't want that you should delete the news from the channel, at the next crawling it won't post it again.
+Sometimes the staff edits news entries, if this happens the crawler identifies them as a new post and will post it again.
+
 *Do not try to run this yet, it's not done!*
