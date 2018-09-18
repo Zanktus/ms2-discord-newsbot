@@ -32,6 +32,7 @@ Sometimes the staff edits news entries, if this happens the crawler identifies t
 * [simplecrawler](https://github.com/simplecrawler/simplecrawler): Simple yet mighty package to scrape websites
 * [cheerio](https://github.com/cheeriojs/cheerio): Used to work with the crawler response (jQuery like syntax)
 * [enmap](https://github.com/eslachance/enmap): Offers data structure with additional utility methods, especially useful if you want to use mongodb and so on instead of JSON
+* [FileSystem "fs"](https://github.com/nodejs/node/blob/master/doc/api/fs.md): A preinstalled nodejs package to write and read files. It's actually okay for this bot, but if you want to write a big one you should consider using a database/enmap or whatever instead.
 
 
 **Do not try to run this yet, it's not done!**
