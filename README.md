@@ -12,7 +12,7 @@ You have to add your own discord user-id (enable developer mode in discord, righ
 *Never share your token with other people*
 
 ### Run
-You can start the bot with `node bot.js` command or using the `start.sh` (linux) so your bot automatically reconnects if it loses the connection.
+You can start the bot with `node bot.js` command or using the `run.sh` (linux) so your bot automatically reconnects if it loses the connection.
 
 ### Features
 In the `settings.json` you can define which channel the news should be posted to, the default is "news".
