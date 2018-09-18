@@ -3,6 +3,6 @@
   "prefix": "!",
   "owner": "INSERT_YOUR_DISCORD_USER_ID_HERE",
   "channelName": "news",
-  "autoStartCrawl": false,
-  "autoStartCrawlTime": 1
+  "autoCrawlTime": 1,
+  "autoStartCrawl": true
 }
