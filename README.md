@@ -22,7 +22,7 @@ Inside the `settings.json` you can define the most basic options:
 * `owner` The required ID of the owner, see installation above
 * `channelName` The channel where the news should be posted to, default is "news"
 * `autoCrawlTime` Definies in which interval news are going to be checked/posted, default is 1 (hour)
-* `autoStartCrawl` If set to *true* you don't need to use commands to run the bot, helpful if your bot restarts a lot, default is *false*
+* `autoStartCrawl` If set to *true* (default) you don't need to use commands to run the news update, helpful if your bot restarts a lot. Set to false if you want to manually control the crawling.
 
 ### Features
 If you disabled *autoStartCrawl* then you need to start the crawling manually with commands. You can either crawl just one time whenever you want, or use a command to let it auto crawl in a specific interval. I prohibited the use of commands to others to avoid abusing it, if you want others to use the commands, you might should add specific conditions and roles manually.
