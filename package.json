@@ -7,10 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/Zanktus/ms2-discord-newsbot.git"
   },
-  // Use this for glitch.com servers:
-  /*"scripts": {
-    "start": "node server.js"
-  },*/
   "keywords": [
     "discord",
     "bot",
