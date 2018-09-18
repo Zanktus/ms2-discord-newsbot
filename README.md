@@ -27,4 +27,13 @@ To start and use the crawling, the configurated owner has to use one of the foll
 When you run the crawler for the first time it will post the latest 9 news to the news channel because the initial `news.json` is empty. If you don't want that you should delete the news from the channel, at the next crawling it won't post it again.
 Sometimes the staff edits news entries, if this happens the crawler identifies them as a new post and will post it again.
 
-*Do not try to run this yet, it's not done!*
+### Dependencies
+* [discord.js](https://github.com/discordjs/discord.js/): Core package to write nodejs based Discord bots
+* [simplecrawler](https://github.com/simplecrawler/simplecrawler): Simple yet mighty package to scrape websites
+* [cheerio](https://github.com/cheeriojs/cheerio): Used to work with the crawler response (jQuery like syntax)
+* [enmap](https://github.com/eslachance/enmap): Offers data structure with additional utility methods, especially useful if you want to use mongodb and so on instead of JSON
+
+
+**Do not try to run this yet, it's not done!**
+
+I've written this bot with expanding in mind, you don't actually need to use enmap to store the commands (because we have only one command) or the events, all could essentially be in one file. You could use this as a boilerplate for your own bot and throw the news function away essentially.
