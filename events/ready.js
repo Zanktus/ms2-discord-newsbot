@@ -3,6 +3,20 @@ module.exports = async (client) => {
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 
     /**
+     * Run news crawler automatically after restart (disabled by default)
+     */
+    if (client.config.autoStartCrawl === true) {
+        const cmd = client.commands.get("news") || client.commands.get(client.aliases.get("news")),
+              interval = client.config.autoStartCrawlTime || 1;
+        
+        console.log(`[news] Started auto crawling every ${interval} hour/s`);
+        
+        client.setInterval(() => {
+            cmd.run(client);
+        }, interval * 3600 * 1000);
+    }
+    
+    /**
      * Optional: Set bot status
      */
     client.user.setActivity("MapleStory 2", {type: "PLAYING"});
