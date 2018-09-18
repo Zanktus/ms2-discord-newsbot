@@ -14,18 +14,23 @@ You have to add your own discord user-id (enable developer mode in discord, righ
 ### Run
 You can start the bot with `node bot.js` command or using the `run.sh` (linux) so your bot automatically reconnects if it loses the connection.
 
+### Options
+Inside the `settings.json` you can define the most basic options:
+* `token` Required to run the bot, see installation above
+* `prefix` Defines the symbol which initializes commands, default is "!"
+* `owner` The required ID of the owner, see installation above
+* `channelName` The channel where the news should be posted to, default is "news"
+* `autoCrawlTime` Definies in which interval news are going to be checked/posted, default is 1 (hour)
+* `autoStartCrawl` If set to *true* you don't need to use commands to run the bot, helpful if your bot restarts a lot, default is *false*
+
 ### Features
-In the `settings.json` you can define which channel the news should be posted to, the default is "news".
-I added also an option which is disabled by default called *autoStartCrawl*. It allows the bot to start crawling once it is booted, so whenever it restarts you don't have to use a command to run the crawler.
+If you disabled *autoStartCrawl* then you need to start the crawling manually with commands. You can either crawl just one time whenever you want, or use a command to let it auto crawl in a specific interval. I prohibited the use of commands to others to avoid abusing it, if you want others to use the commands, you might should add specific conditions and roles manually.
 
-To start and use the crawling, the configurated owner has to use one of the following commands (either direct message or in a channel). I prohibited the use of commands to others to avoid abusing it, if you want others to use the commands, you might should add specific conditions and roles manually.
+* `!news` Manually crawl the news page once and post if new entries were found
+* `!news auto` Auto crawls the news page in an interval and post once a new entry is found (default: *autoCrawlTime* (1))
+* `!news auto <number>` Same as above, but you can define the interval in which it should check for news (does not override the settings)
 
-* `!news update` Manually crawl the news page and post if new entries were found
-* `!news auto` Auto crawls the news page hourly and post once a new entry is found
-* `!news auto <number>` Same as above, but you can define the interval in which it should check for news (default: 1)
-
-When you run the crawler for the first time it will post the latest 9 news to the news channel because the initial `news.json` is empty. If you don't want that you should delete the news from the channel, at the next crawling it won't post it again.
-Sometimes the staff edits news entries, if this happens the crawler identifies them as a new post and will post it again.
+When you run the crawler for the first time it will post the latest news entry to the news channel because the initial `news.json` is empty. At the next crawling it won't post it again. Sometimes the staff edits news entries, if this happens the crawler identifies them as a new post and will post it again.
 
 ### Dependencies
 * [discord.js](https://github.com/discordjs/discord.js/): Core package to write nodejs based Discord bots
@@ -34,7 +39,8 @@ Sometimes the staff edits news entries, if this happens the crawler identifies t
 * [enmap](https://github.com/eslachance/enmap): Offers data structure with additional utility methods, especially useful if you want to use mongodb and so on instead of JSON
 * [FileSystem "fs"](https://github.com/nodejs/node/blob/master/doc/api/fs.md): A preinstalled nodejs package to write and read files. It's actually okay for this bot, but if you want to write a big one you should consider using a database/enmap or whatever instead.
 
-
-**Do not try to run this yet, it's not done!**
+---
 
 I've written this bot with expanding in mind, you don't actually need to use enmap to store the commands (because we have only one command) or the events, all could essentially be in one file. You could use this as a boilerplate for your own bot and throw the news function away essentially.
+
+Any questions? Drop me a message in Discord @ Zanktus#1052
