@@ -17,7 +17,6 @@ The bot will look for new posts every hour automatically. If you just add the bo
 
 ### Additional
 This is currently still in some sort of test mode, if you have any issues please let me know.
-I do host it on my own server which costs money of course, if you appreciate the work I do think about [buying me coffee](buymeacoff.ee/LNaTFiJXs), thanks! :)
 
 ---
 
