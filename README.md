@@ -12,10 +12,12 @@ To get the news, the bot requires a channel to post in. I configurated it that w
 
 The bot will look for new posts every hour automatically. If you just add the bot to the server it posts nothing, because the bot is up to date with current news, wait until a new post is available.
 
-*This is currently still in some sort of test mode, if you have any issues please let me know.*
-
 ### Commands
 * `!news` Manually crawl the news page once and post if new entries were found (if you don't want to wait an hour).
+
+### Additional
+This is currently still in some sort of test mode, if you have any issues please let me know.
+I do host it on my own server which costs money of course, if you appreciate the work I do think about [buying me coffee](buymeacoff.ee/LNaTFiJXs), thanks! :)
 
 ---
 
