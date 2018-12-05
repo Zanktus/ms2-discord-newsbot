@@ -4,7 +4,18 @@ This Discord bot scrapes the MapleStory 2 news page and posts new entries to a c
 ![Imgur](https://i.imgur.com/sSWsg7P.jpg)
 
 ## Method A: Adding the bot simply to your Discord server
-Coming soon
+
+Click [here](https://discordapp.com/oauth2/authorize?client_id=491185442734080009&permissions=8&scope=bot) to add it to your Discord Server.
+
+### Run
+To get the news, the bot requires a channel to post in. I configurated it that way, that it will look for a channel called **news**. So create that channel, and the news will be posted there.
+
+The bot will look for new posts every hour automatically. If you just add the bot to the server it posts nothing, because the bot is up to date with current news, wait until a new post is available.
+
+*This is currently still in some sort of test mode, if you have any issues please let me know.*
+
+### Commands
+* `!news` Manually crawl the news page once and post if new entries were found (if you don't want to wait an hour).
 
 ---
 
